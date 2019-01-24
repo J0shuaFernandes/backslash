@@ -1,0 +1,63 @@
+{% extends "home/header.html" %}
+{% block content %}	
+{% load staticfiles %}
+
+<div class="col-sm-3" style="margin-top:150px;">
+  <nav class="navbar navbar-inverse navbar-left">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000"><h2 id="home">Home</h2></a></li>
+      <li class="nav-item"><a class="nav-link" href="http://127.0.0.1:8000/blog"><h2 id="blog">Blog</h2></a></li>
+      <li class="nav-item"><a class="nav-link" href="#"><h2 id="events">Events</h2></a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="col-sm-9" style="padding-top: 50px;">			
+<!-- code debugging, football, cricket, film_screening, singing,  -->
+  <br><br>
+  <div class="hvrbox">
+    <img src="{% static 'img/coding_1.jpg' %}" class="hvrbox-layer_bottom" width="200px" height="200px">
+    <div class="hvrbox-layer_top">
+      <div class="hvrbox-text">Code Debugging</div>
+    </div>
+  </div>
+        
+  <div class="hvrbox">
+    <img src="{% static 'img/football_dark_blue.jpg' %}" class="hvrbox-layer_bottom" width="200px" height="200px">
+    <div class="hvrbox-layer_top">
+      <div class="hvrbox-text">Football</div>
+    </div>
+  </div>
+
+  <div class="hvrbox">
+    <img src="{% static 'img/cricket_dark_blue.jpg' %}" class="hvrbox-layer_bottom" width="200px" height="200px">
+    <div class="hvrbox-layer_top">
+      <div class="hvrbox-text">Cricket</div>
+    </div>
+  </div>
+        
+  <br>
+  <div class="hvrbox">
+    <img src="{% static 'img/film_screening.jpg' %}" class="hvrbox-layer_bottom" width="200px" height="200px">
+    <div class="hvrbox-layer_top">
+      <div class="hvrbox-text">Film Screening</div>
+    </div>
+  </div>
+
+  <div class="hvrbox">
+    <img src="{% static 'img/singing_1.jpg' %}" class="hvrbox-layer_bottom" width="200px" height="200px">
+    <div class="hvrbox-layer_top">
+      <div class="hvrbox-text">Singing</div>
+    </div>
+  </div>
+
+  <div class="hvrbox">
+    <img src="{% static 'img/mobile_photography.jpg' %}" class="hvrbox-layer_bottom" width="200px" height="200px">
+    <div class="hvrbox-layer_top">
+      <div class="hvrbox-text">Mobile Photography</div>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}
