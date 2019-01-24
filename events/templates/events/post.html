@@ -1,0 +1,9 @@
+{% extends "events/header.html" %}
+<!-- creates an individual page for each post -->
+{% block content %}
+	<div class="col-sm-10" style="margin-top:150px;">
+		<h3><a href="/events/{{events.id}}">{{event.title}}</a></h3>
+		<!-- <h6>on {{events.date}}</h6> -->
+		{{ event.body }}
+	</div>
+{% endblock %}

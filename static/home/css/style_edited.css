@@ -1,0 +1,115 @@
+/* Main */
+* {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Dosis';
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/4hYyXH_8WmbBLamf6WjLwg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    background: #13181e; /* earlier - 191919 */
+    color: #ffffff;
+}
+
+a:link {
+    color: #00aeef; /* 07b39b, alt: 00aeef; */
+}
+
+a:hover {
+    color: #5073b8;
+}
+
+a:active {
+    color: #ef4e7b;
+}
+
+.item {
+    margin: 3px 8px;
+}
+
+/* Effects */
+#particles, #vignette {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
+#vignette {
+    box-shadow: 0 0 800px rgba(0,0,0,0.9) inset;
+    z-index: -1;
+}
+
+/* animations */
+#reel {   
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spinL { 
+    from { transform: rotate(0deg); } 
+    to { transform: rotate(360deg); }
+}
+
+@keyframes spinR {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+
+/* image rotaions for the titles */
+@keyframes spinForHome {
+    from { transform: rotate(240deg); }
+    to { transform: rotate(360deg); }   
+}
+
+@keyframes spinForBlog {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(120deg); }
+}
+
+@keyframes spinForEvents {
+    from { transform: rotate(120deg); }
+    to { transform: rotate(240deg); }   
+}
+
+/* */
+@keyframes spinToHome {
+    from { transform: rotate(120deg); }
+    to { transform: rotate(0deg); }
+}
+
+@keyframes spinToBlog {
+    from { transform: rotate(240deg); }
+    to { transform: rotate(120deg); }
+}
+
+@keyframes spinToEvents {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(240deg); }
+}
+
+/* style for the description section */
+#des {
+    position: relative;
+    top: 200px;
+    left: 100px;
+    right: 300px;
+}
+
+#home_description {
+    top: 100%;
+}
